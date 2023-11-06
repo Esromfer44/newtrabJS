@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Jogo</title>
+</head>
+<body>
+    <div class="header">
+        <div class="dropdown">
+            <label for="level">Nível:</label>
+            <select id="level" name="level">
+                <option value="Selecione">Selecione</option>
+                <option value="facil">Fácil</option>
+                <option value="medio">Médio</option>
+                <option value="dificil">Difícil</option>
+            </select>
+        </div>
+        <div class="timer">Tempo: <span id="time"></span></div>
+        <div class="buttons">
+            <button class="button" id="iniciar">INICIAR</button>
+            <button class="button" id="pausar">PAUSAR</button>
+            <button class="button" id="parar">PARAR</button>
+        </div>
+    </div>
+    <div class="highlight" id="numero"></div>
+    <div id="game-over"></div>
+
+    <div class="footer">
+        <div class="acertos">ACERTOS: <span id="numAcertos">0</span> (<span id="porcentagemAcertos">0%</span>)</div>
+        <div class="erros">ERROS: <span id="numErros">0</span></div>
+        <div class="pares-sorteados">NÚMEROS PARES SORTEADOS: <span id="numParesSorteados">0</span></div>
+    </div>
+   
+</body>
+</html>
